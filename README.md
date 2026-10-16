@@ -6,7 +6,7 @@
 
 Clone → install → ship. Two minutes. No env vars, no database, no keys.
 
-![VibeBoot Lite Starter screenshot](docs/screenshot.png)
+![VibeBoot Lite Starter screenshot](docs/screenshot.svg)
 
 </div>
 
