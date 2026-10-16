@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #050505;
+  --color-neon: #39ff14;
+  --color-neon-dim: #2bd10e;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+}
+
+html { background: var(--color-ink); color: #e7e7e7; color-scheme: dark; }
+::selection { background: var(--color-neon); color: #000; }
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(57,255,20,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(57,255,20,.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+.glow { text-shadow: 0 0 24px rgba(57,255,20,.55); }
+.box-glow { box-shadow: 0 0 0 1px rgba(57,255,20,.35), 0 0 40px -8px rgba(57,255,20,.45); }
+@keyframes blink { 50% { opacity: 0; } }
+.caret { animation: blink 1s steps(1) infinite; }
+@media (prefers-reduced-motion: reduce) { .caret { animation: none; } }
