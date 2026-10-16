@@ -1,0 +1,8 @@
+---
+description: VibeBoot Lite Starter conventions
+alwaysApply: true
+---
+- Read AGENTS.md first; follow it.
+- Edit copy/links in src/lib/site.ts; reuse primitives from src/components/ui.tsx.
+- Tailwind v4 tokens only (text-neon, bg-ink). Black + #39FF14 brand. No purple.
+- Server components by default. Run `npm run check` before declaring done.
