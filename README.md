@@ -2,11 +2,13 @@
 
 # ▲ VibeBoot Lite Starter
 
-**A free, gorgeous Next.js 16 + Tailwind v4 landing-page starter built for vibe coding in Cursor and Claude Code.**
+**A free Next.js 16 + Tailwind v4 landing-page starter, set up for coding with Cursor and Claude Code.**
 
-Clone → install → ship. Two minutes. No env vars, no database, no keys.
+**[Live preview → lite.vibeboot.dev](https://lite.vibeboot.dev)** · MIT licensed
 
-![VibeBoot Lite Starter screenshot](docs/screenshot.svg)
+Clone, install, run. No env vars, no database, no keys.
+
+[![VibeBoot Lite Starter screenshot](docs/screenshot.svg)](https://lite.vibeboot.dev)
 
 </div>
 
@@ -28,7 +30,7 @@ Then open it in Cursor or Claude Code and say: *"Rewrite the hero for my product
 - **Tailwind v4** with brand tokens in a single `@theme` block (`src/app/globals.css`)
 - **Landing page**: hero, animated terminal, feature grid, comparison table
 - **Components**: `Button`, `Badge`, `Section`, `Nav`, `Footer`, `Terminal`, `Comparison`
-- **Agent-ready**: `AGENTS.md`, `CLAUDE.md`, `.cursor/rules/project.mdc`
+- **Agent-ready**: `AGENTS.md`, `CLAUDE.md`, `.cursor/rules/project.mdc` (AGENTS.md also carries the block `next dev` adds, which points agents at the Next.js docs bundled in `node_modules`)
 - **One config file**: `src/lib/site.ts` holds all copy and links
 
 ```
@@ -51,7 +53,7 @@ src/
 ## Lite vs Pro
 
 Lite gets you a landing page that looks launched. When you need real users and real money, the
-**[VibeBoot SaaS Starter](https://vibeboot.dev/templates/saas-starter)** has it all wired up.
+**[VibeBoot SaaS Starter](https://vibeboot.dev/templates/saas-starter)** has those parts wired up.
 
 | | Lite (this repo) | SaaS Starter |
 | --- | :---: | :---: |
@@ -62,7 +64,7 @@ Lite gets you a landing page that looks launched. When you need real users and r
 | Stripe subscriptions + webhooks | — | ✅ |
 | Prisma database + schema | — | ✅ |
 | Protected dashboard + billing portal | — | ✅ |
-| Transactional emails | — | ✅ |
+| Magic-link sign-in emails (SMTP) | — | ✅ |
 | Security headers + tests | — | ✅ |
 | Price | **Free (MIT)** | **$49 one-time** |
 
@@ -74,7 +76,8 @@ Set `NEXT_PUBLIC_HIDE_PRO_BANNER=1`, or delete `<ProBanner />` from `src/app/lay
 
 ## Deploy
 
-Works on Vercel, Netlify or Cloudflare out of the box: `npm run build`.
+- **Vercel or Netlify**: import the repo with the default settings (`npm run build`).
+- **Any static host** (Cloudflare Pages, GitHub Pages, S3): run `STATIC_EXPORT=1 npm run build` and upload the `out/` folder. The live preview is built and hosted this way, on Cloudflare Pages.
 
 ## License
 

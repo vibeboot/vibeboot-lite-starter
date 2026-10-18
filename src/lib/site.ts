@@ -13,6 +13,9 @@ export const PRO = {
   buyUrl: "https://vibeboot.gumroad.com/l/saas-starter",
 };
 
+/** Where this starter lives. Linked from the footer credit; delete it if you like. */
+export const LITE_REPO_URL = "https://github.com/vibeboot/vibeboot-lite-starter";
+
 /** Set NEXT_PUBLIC_HIDE_PRO_BANNER=1 to hide the upgrade banner. */
 export const SHOW_PRO_BANNER = process.env.NEXT_PUBLIC_HIDE_PRO_BANNER !== "1";
 
@@ -25,7 +28,7 @@ export const COMPARISON: { feature: string; lite: boolean | string; pro: boolean
   { feature: "Stripe subscriptions + webhooks", lite: false, pro: true },
   { feature: "Prisma database + schema", lite: false, pro: true },
   { feature: "Protected dashboard + billing portal", lite: false, pro: true },
-  { feature: "Transactional emails", lite: false, pro: true },
+  { feature: "Magic-link sign-in emails (SMTP)", lite: false, pro: true },
   { feature: "Security headers + tests", lite: false, pro: true },
   { feature: "Price", lite: "Free (MIT)", pro: "$49 one-time" },
 ];

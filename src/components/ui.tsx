@@ -30,7 +30,7 @@ export function Section({ id, eyebrow, title, children }: { id?: string; eyebrow
   return (
     <section id={id} className="mx-auto max-w-6xl px-5 py-20 sm:py-28">
       <p className="font-mono text-xs uppercase tracking-[0.25em] text-neon">{"// "}{eyebrow}</p>
-      <h2 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-5xl">{title}</h2>
+      <h2 className="mt-3 max-w-2xl text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-5xl">{title}</h2>
       <div className="mt-12">{children}</div>
     </section>
   );

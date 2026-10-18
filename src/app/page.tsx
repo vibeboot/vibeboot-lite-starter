@@ -20,7 +20,7 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-16 sm:pt-24 lg:grid-cols-[1.1fr_1fr]">
           <div>
             <Badge>v1.0 · free & open source</Badge>
-            <h1 className="mt-6 text-5xl font-black leading-[0.95] tracking-tighter text-white sm:text-7xl">
+            <h1 className="mt-6 text-5xl font-black leading-[1.05] tracking-tighter text-white sm:text-7xl">
               Ship the idea <span className="glow text-neon">tonight.</span>
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-8 text-zinc-400">{SITE.description} Made for vibe coding in Cursor and Claude Code.</p>
