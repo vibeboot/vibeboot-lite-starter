@@ -8,6 +8,8 @@
 
 Clone, install, run. No env vars, no database, no keys.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvibeboot%2Fvibeboot-lite-starter&project-name=my-vibeboot-app&repository-name=my-vibeboot-app) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https%3A%2F%2Fgithub.com%2Fvibeboot%2Fvibeboot-lite-starter)
+
 [![VibeBoot Lite Starter screenshot](docs/screenshot.svg)](https://lite.vibeboot.dev)
 
 </div>
@@ -76,6 +78,7 @@ Set `NEXT_PUBLIC_HIDE_PRO_BANNER=1`, or delete `<ProBanner />` from `src/app/lay
 
 ## Deploy
 
+- **One click**: use the Deploy buttons at the top. Vercel or Netlify copies this repo to your GitHub account and deploys it. No env vars needed (optional: `NEXT_PUBLIC_HIDE_PRO_BANNER=1`).
 - **Vercel or Netlify**: import the repo with the default settings (`npm run build`).
 - **Any static host** (Cloudflare Pages, GitHub Pages, S3): run `STATIC_EXPORT=1 npm run build` and upload the `out/` folder. The live preview is built and hosted this way, on Cloudflare Pages.
 
