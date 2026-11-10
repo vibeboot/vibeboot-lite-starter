@@ -52,25 +52,36 @@ src/
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm run check` | All of the above, in one go |
 
-## Lite vs Pro
+## Upgrade when you need more
 
-Lite gets you a landing page that looks launched. When you need real users and real money, the
-**[VibeBoot SaaS Starter](https://vibeboot.dev/templates/saas-starter)** has those parts wired up.
+Lite is a landing page on purpose: no auth, no database, no payments. If your project needs those, the two paid
+VibeBoot starters have them wired up and tested. Same stack and the same agent files, so nothing you set up here is wasted.
 
-| | Lite (this repo) | SaaS Starter |
-| --- | :---: | :---: |
-| Next.js 16 + React 19 + Tailwind v4 | ✅ | ✅ |
-| Landing page + UI components | ✅ | ✅ |
-| Cursor rules / AGENTS.md / CLAUDE.md | ✅ | ✅ |
-| Auth.js v5 (magic link + OAuth) | — | ✅ |
-| Stripe subscriptions + webhooks | — | ✅ |
-| Prisma database + schema | — | ✅ |
-| Protected dashboard + billing portal | — | ✅ |
-| Magic-link sign-in emails (SMTP) | — | ✅ |
-| Security headers + tests | — | ✅ |
-| Price | **Free (MIT)** | **$49 one-time** |
+| | Lite (this repo) | [SaaS Starter](https://vibeboot.dev/templates/saas-starter?ref=lite-readme) | [AI Chatbot Starter](https://vibeboot.dev/templates/ai-chatbot-starter?ref=lite-readme) |
+| --- | :---: | :---: | :---: |
+| Price | **Free (MIT)** | **$49 one-time** | **$59 one-time** |
+| Next.js 16.4.5, React 19, TypeScript, Tailwind v4 | ✅ | ✅ | ✅ |
+| Landing page | ✅ | ✅ | ✅ |
+| `AGENTS.md`, `CLAUDE.md`, `.cursor/rules/` | ✅ | ✅ | ✅ |
+| Claude Code guardrails + slash commands (`.claude/`) | — | ✅ | ✅ |
+| Auth.js v5: GitHub sign-in + optional email magic link | — | ✅ | ✅ |
+| Prisma database (SQLite to start, switch to Postgres) | — | ✅ | ✅ |
+| Stripe subscriptions: Checkout, Billing Portal, signed webhook | — | ✅ | ✅ |
+| Rate limiting + security headers (CSP, HSTS) | — | ✅ | ✅ |
+| Protected app area | — | Dashboard | Chat app |
+| Streaming AI chat with saved history and personas | — | — | ✅ |
+| Free / Pro daily message limits (20 / 500 by default) | — | — | ✅ |
+| Any OpenAI-compatible model, plus a mock provider (runs with zero API keys) | — | — | ✅ |
+| Vitest tests | — | 19 | 37 |
+| License | MIT | Single-buyer commercial | Single-buyer commercial |
+| Live demo | [lite.vibeboot.dev](https://lite.vibeboot.dev) | [Acme SaaS demo](https://vibeboot-demo.vibeboot.workers.dev) | [Chatbot demo](https://vibeboot-chatbot-demo.vibeboot.workers.dev) |
 
-👉 **[Get the SaaS Starter — $49](https://vibeboot.gumroad.com/l/saas-starter)**
+Both paid starters are one-time payments on Gumroad, with a **14-day money-back guarantee** and **lifetime updates**:
+every new version goes to your Gumroad library at no extra cost. No subscription.
+
+👉 **[SaaS Starter, $49](https://vibeboot.dev/templates/saas-starter?ref=lite-readme)** · **[AI Chatbot Starter, $59](https://vibeboot.dev/templates/ai-chatbot-starter?ref=lite-readme)**
+
+Only need a landing page? Stay on Lite. It's MIT and it's yours.
 
 ## Removing the upgrade banner
 
