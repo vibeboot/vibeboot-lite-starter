@@ -72,7 +72,7 @@ VibeBoot starters have them wired up and tested. Same stack and the same agent f
 | Streaming AI chat with saved history and personas | — | — | ✅ |
 | Free / Pro daily message limits (20 / 500 by default) | — | — | ✅ |
 | Any OpenAI-compatible model, plus a mock provider (runs with zero API keys) | — | — | ✅ |
-| Vitest tests | — | 19 | 37 |
+| Vitest tests | — | 73 | 105 |
 | License | MIT | Single-buyer commercial | Single-buyer commercial |
 | Live demo | [lite.vibeboot.dev](https://lite.vibeboot.dev) | [Acme SaaS demo](https://vibeboot-demo.vibeboot.workers.dev) | [Chatbot demo](https://vibeboot-chatbot-demo.vibeboot.workers.dev) |
 
